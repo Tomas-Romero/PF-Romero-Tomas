@@ -14,17 +14,16 @@ a{
 a:visited{
     text-decoration: none;
     color: #000000;
-}
-ul{
-    list-style-type: none;
-}
+}   
 .titulos-nosotros{
     justify-content: center;
+    height: 70px;
     gap: 20px;
 }
-.h2-nosotros{
-    font-size: 50px;
+.titulos-nosotros .h2-nosotros{
+    font-size: 3.5rem;
     text-decoration: underline;
+    margin: 0px;
 }
 .h3-nosotros{
     font-size: 2rem;
@@ -38,7 +37,7 @@ ul{
     display: flex;
     flex-flow: row wrap;
 }
-.flex-column{
+.flex-columna{
     flex-flow: column wrap;
 }
 .background-blanco{
@@ -63,25 +62,43 @@ ul{
 .justificado-centro{
     justify-content: center;
 }
-.justificado-derecha{
-    justify-content: end;
-}
-.justificado-izquierda{
-    justify-content: flex-start;
-}
 .justificado-space-around{
     justify-content: space-around;
 }
-.alineado-centro{
+.contenido-alineado-centro{
     align-content: center;
 }
-.navbar-brand{
-    margin: 0px;
+.contenido-alineado-space-around{
+    align-content: space-around;
+}
+.items-alineado-space-around{
+    align-content: space-around;
+}
+.items-alineado-centro{
+    align-items: center;
 }
 .marginpadding0{
     margin: 0px;
     padding: 0px;
 }
+.borde-blanco{
+    border: 3px solid #ffffff;
+}
+.borde-negro{
+    border: 3px solid #000000;
+}
+.botones{
+    background-color: #343a40;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 100%;
+}
+.texto-centrado{
+    text-align: center;
+}
+/*Diseño del nav para todas las páginas*/
 .show{
     background-color: #343a40;
     justify-items: center;
@@ -92,13 +109,12 @@ ul{
 .dropdown-menu a{
     color: #fff;
 }
-/*Diseño del nav para todas las páginas*/
+.navbar-brand{
+    margin: 0px;
+}
 .nav-inicio{
     position: fixed;
     height: 80px;
-}
-.nav-inicio .nav-inicio-logo{
-    justify-content: center;
 }
 .imagen-logo-nav{
     height: 50px;
@@ -107,37 +123,41 @@ ul{
 .navbar-texto{
     font-size: 2em;
 }
+ul{
+    list-style-type: none;
+}
 .div-header{
     background-color: #343a40;
     background-image: url(../images/pattern-background.webp);
     height: 400px;
     margin-top: 70px;
-    border-bottom: 2px solid #000000;
-    justify-content: center;
-    align-items: center;
-    align-content:space-around;
+    border-bottom: 3px solid black;
 }
 .img-header{
     width: 300px;
 }
 h1{
     font-size: 100px;
-}   
+}
+/*Diseño del Header responsive*/
+@media (min-width: 370px) and (max-width: 767px){
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+}
 /*Diseño Main o Index*/
 .cont-nosotros-inicio{
-    padding: 110px 0px 10px 20px;
-    text-align: center;
+    padding: 10% 0px 10px 20px;
     gap: 20px;
 }
 .cont-contacto-inicio{
-    text-align: center;
-    padding: 0px 0px 10px 20px;
-    align-content: center;
+    padding-left: 10px;
 }
 .div-cont-contacto-inicio{
-    width: 49%;
-    align-items: center;
+    width: 48%;
     gap: 20px;
+    align-self: center;
 }
 .nosotros-inicio{
     font-size: 3.5rem;
@@ -150,89 +170,47 @@ h1{
     width: 70%;
 }
 .img-nosotros-inicio{
-    width: 49%;
-    border: 2px solid black;
+    width: 100%;
     border-radius: 10px;
 }
 .button-nosotros-inicio{
-    border: 3px solid black;
-    background-color: #999993;
-    width: 9rem;
     height: 4rem;
-    border-radius: 20px;
+    font-size: 1.75rem;
 }
-.button-contacto-inicio {
-    border: 3px solid black;
-    background-color: #999993;
-    width: 9rem;
-    height: 4rem;
-    border-radius: 20px;
-}
+/*Section Menú Inicio*/
 .section-menu-inicio{
     color: #ffffff;
     height: 800px;
-    padding-top: 30px;
-    align-content: center;
-    justify-content: center;
-}
-.h2-menu-inicio{
-    font-size: 3.5rem;
-    text-decoration: underline;
-    margin-bottom: 20px;
-    text-align: center;
+    padding: 5% 0px 0px 0px;
+    gap: 20px;
 }
 .cont-imgmenu-inicio{
-    height: 70%;
-    gap: 20px;
-    padding: 0px 40px 10px 20px;
+    padding: 0px 10px 10px 20px;
 }
 .imagen-menu-inicio{
-    width: 32%;
+    width: 30%;
     border-radius: 20px;
-    border: 3px solid #ffffff;
 }
-.button-menu-inicio{
-    background-color: #999993;
-    height: 6rem;
-    border-radius: 20px;
-    color: #ffffff;
-    font-size: 2.5rem;
-}
+/*Section Galeria Inicio*/
 .section-galeria-inicio{
-    padding-top: 100px;
-    align-content: center;
-    justify-content: center;
+    padding-top: 5%;
 }
 .cont-galeria-inicio{
-    height: 70%;
-    gap: 20px;
-    padding: 0px 40px 10px 20px;
+    height: 90%;
+    padding: 0px 10px 10px 10px;
 }
 .img-galeria-inicio{
     width: 32%;
     border-radius: 20px;
-    border: 3px solid #000000;
 }
-.button-galeria-inicio{
-    border: 3px solid black;
-    background-color: #999993;
-    height: 6rem;
-    border-radius: 20px;
-    align-content: center;
-    font-size: 2.5rem; 
-}
+/*Section Presentacion Inicio*/
 .section-presentacion-inicio{
-    height: 900px;
-    justify-content: center;
-    padding-top: 140px;
-}
-.h2-presentacion-inicio{
-    font-size: 3.5rem;
-    text-decoration: underline;
-    text-align: center;
+    height: 700px;
+    padding-top: 5%;
 }
 .video-presentacion-inicio{
-    border: 3px solid #ffffff;
+    width: 80%;
+    height: 80%;
 }
 /*Diseño de la página nosotros*/
 .section-nosotros-nosotros{
@@ -610,42 +588,26 @@ td{
 }
 /*Diseño Footer para todas las páginas*/
 footer{
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px 20px 20px
-}
-.div-copyright-footer{
-    width: 30%;
-    flex-flow: column wrap;
-    align-items: center;
-}
-.ubicacion-footer{
-    width: 20%;
-    height: 60%;
+    padding: 40px 0px 10px 10px;
     font-size: 1.75rem;
-    flex-flow: column wrap;
-    justify-content: space-between;
 }
-.ubicacion-footer a{
-    text-decoration: underline;
+.cont-copyright-footer{
+    width: 30%;
 }
-.cont-redes-footer{
+.cont-copyright-footer img{
+    width: 70%;
+}
+.cont-ubicacion-footer{
     width: 35%;
 }
-.div-redes-footer{
-    justify-content: space-between;
-}
-.div-redes-link-footer{
-    justify-content: space-between;
-    font-size: 30px;
+.cont-redes-footer{
+    width: 20%;
+    gap: 20px;
 }
 .img-redes-footer{
-    width: 60px;
+    max-width: 30%;
 }
 .copyright-footer {
 	font-style: italic;
 	line-height: 1.5;
-    font-size: 1.75rem;
-    text-align: center;
-    margin-top: -90px;
 }

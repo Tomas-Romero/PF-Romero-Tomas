@@ -1,0 +1,110 @@
+/*Diseño Main o Index*/
+.section-nosotros-inicio{
+    padding: -- 0px 10px 20px;
+    .cont-nosotros-inicio{
+        padding-bottom: 10px;
+    }
+    .div-cont-contacto-inicio{
+        width: 48%;
+        align-self: center;
+    }
+    .nosotros-inicio{
+        font-size: 3.5rem;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+        width: 70%;
+    }
+    .img-nosotros-inicio{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .button-nosotros-inicio{
+        height: 4rem;
+        font-size: 1.75rem;
+    }
+}
+.imagen-menu-inicio{
+    width: 30%;
+    border-radius: 20px;
+}
+.cont-galeria-inicio{
+    height: 90%;
+}
+.img-galeria-inicio{
+    width: 32%;
+    border-radius: 20px;
+}
+.section-presentacion-inicio{
+    height: 70vh;
+}
+.video-presentacion-inicio{
+    width: 80vh;
+    height: 40vh;
+}
+@media (min-width: 370px) and (max-width: 991px){
+h1{
+    text-align:  center;
+}
+.section-nosotros-inicio{
+    padding: - 5px 5px 5px;
+}
+.section-nosotros-inicio div p{
+    width: 90%;
+}
+.section-menu-inicio{
+    align-items: center;
+}
+.cont-mobile-inicio{
+    gap: 20px;
+    align-items: center;
+}
+.cont-botonmenu-inicio{
+    width: 80%;
+}
+}
+@media (min-width: 370px) and (max-width: 767px){
+.img-header{
+    max-width: 50%;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+nav{
+    width: 100%;
+}
+.navbar-texto{
+    font-size: 2rem;
+}
+.button-menu-inicio{
+    font-size: 1.5rem;
+}
+.imagen-menu-inicio{
+    width: 70%;
+}
+.img-galeria-inicio{
+    width: 90%;
+}
+.section-presentacion-inicio .h2-nosotros{
+    font-size: 3rem;
+}
+.video-presentacion-inicio{
+    height: 40vh;
+    width: 40vh;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.button-menu-inicio{
+    font-size: 3rem;
+}
+.imagen-menu-inicio{
+    width: 50%;
+}
+.img-galeria-inicio{
+    width: 50%;
+}
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+$gris-principal: #343a40;
+a{
+    text-decoration: none;
+    color: #000000;
+    &:visited{
+        text-decoration: none;
+        color: #000000;
+    } 
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px
+      400px
+      1fr
+      auto;  
+    grid-template-areas:
+      "my-nav my-nav my-nav"
+      "my-header my-header my-header"
+      "my-main my-main my-main"
+      "my-footer my-footer my-footer"
+}
+main{
+    grid-area: my-main;
+}  
+.titulos-nosotros{
+    justify-content: center;
+    height: 70px;
+    gap: 20px;
+    .h2-nosotros{
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin: 0px;
+    }
+    .h3-nosotros{
+    font-size: 2rem;
+    text-decoration: underline;
+    }
+    .img-titulos{
+    width: 50px;
+    height: 50px;
+    }
+}
+.cont-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-columna{
+    flex-flow: column wrap;
+}
+.justificado-centro{
+    justify-content: center;
+}
+.justificado-space-around{
+    justify-content: space-around;
+}
+.contenido-alineado-centro{
+    align-content: center;
+}
+.contenido-alineado-space-around{
+    align-content: space-around;
+}
+.items-alineado-space-around{
+    align-items: space-around;
+}
+.items-alineado-centro{
+    align-items: center;
+}
+.background-blanco{
+    background-color: #fff;
+    color: #000;
+}
+.background-negro{
+    background-color: #000;
+    color: #fff;
+}
+.background-degrade-blanco{
+    background: linear-gradient(180deg, #000000 0%, #ffffff 50px);
+    color: #000;
+    padding: 70px 10px 10px 10px;
+}
+.background-degrade-negro{
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 50px);
+    color: #fff;
+    padding: 70px 10px 10px 10px;
+}
+.ancho100{
+    width: 100%;
+}
+.marginpadding0{
+    margin: 0px;
+    padding: 0px;
+}
+.borde-blanco{
+    border: 3px solid #ffffff;
+}
+.borde-negro{
+    border: 3px solid #000000;
+}
+.botones{
+    background-color: $gris-principal;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 100%;
+}
+.gap20px{
+    gap: 20px;
+}
+.texto-centrado{
+    text-align: center;
+}
+.show{
+    background-color: $gris-principal;
+    justify-items: center;
+}

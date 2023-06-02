@@ -1,0 +1,44 @@
+nav{
+    grid-area: my-nav;
+    .dropdown-menu {
+        background-color: $gris-principal;
+        a{
+            color: #fff;
+        }
+    }
+    .navbar-brand{
+        margin: 0px;
+    }
+    .imagen-logo-nav{
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .navbar-texto{
+        font-size: 2em;
+    }
+    ul{
+        list-style-type: none;
+    }
+}
+.nav-inicio{
+    position: fixed;
+    height: 80px;
+}
+header{
+    grid-area: my-header;
+    .div-header{
+        background-color: #343a40;
+        background-image: url(../images/pattern-background.webp);
+        background-image: url(../images/backgroun-header2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        border-bottom: 3px solid black;
+        .img-header{
+            width: 300px;
+        }
+        h1{
+            font-size: 100px;
+        }
+    }
+}

@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+/*Definicion de variables y mixins*/
+/*Definicion de clases o caracteristicas generales*/
 a {
   text-decoration: none;
   color: #000000;
@@ -217,7 +219,7 @@ header .div-header h1 {
   }
 }
 
-/*Diseño Main o Index*/
+/*Diseño Inicio o Index*/
 .section-nosotros-inicio {
   padding: -- 0px 10px 20px;
 }
@@ -497,6 +499,120 @@ header .div-header h1 {
   border-radius: 15px;
 }
 
+/*Diseño de la página de Menú*/
+.section-contacto-contacto {
+  gap: 40px;
+}
+
+.div-contacto-img {
+  width: 45%;
+  height: auto;
+  max-width: 500px;
+}
+.div-contacto-img img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.div-contacto-formulario {
+  width: 49%;
+  height: auto;
+  font-size: 2rem;
+}
+.div-contacto-formulario label {
+  margin: 20px;
+}
+.div-contacto-formulario input {
+  border-radius: 10px;
+}
+.div-contacto-formulario select {
+  scale: 0.9;
+}
+.div-contacto-formulario .formulario-boton {
+  padding: 10px;
+  scale: 0.8;
+}
+
+.section-contacto-comunicacion {
+  gap: 40px;
+}
+.section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion {
+  width: 39%;
+  height: auto;
+  background-color: #343a40;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+}
+.section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion h3 {
+  font-size: 2rem;
+}
+.section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion p {
+  font-size: 1.5rem;
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+.section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion p a {
+  color: #fff;
+}
+@media (min-width: 370px) and (max-width: 767px) {
+  .section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion {
+    width: 70%;
+    height: auto;
+  }
+}
+
+.cont-articulos-contacto-redes .article-redes {
+  width: 22%;
+  height: auto;
+  background-color: #343a40;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 2rem;
+}
+.cont-articulos-contacto-redes .img-redes {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+}
+.cont-articulos-contacto-redes .article-redes a {
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 370px) and (max-width: 767px) {
+  .cont-articulos-contacto-redes .article-redes {
+    width: 45%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cont-articulos-contacto-redes .article-redes {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 991px) {
+  .section-contacto-contacto {
+    align-items: center;
+  }
+  .section-contacto-contacto div {
+    justify-content: center;
+  }
+  .section-contacto-contacto .div-contacto-img {
+    order: 2;
+    justify-items: center;
+  }
+}
 footer {
   grid-area: my-footer;
   padding: 40px 0px 10px 10px;

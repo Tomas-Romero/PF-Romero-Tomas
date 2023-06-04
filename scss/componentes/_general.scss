@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/*Definicion de variables y mixins*/
 $gris-principal: #343a40;
 @mixin tamaño($width, $height)
 {
@@ -16,6 +17,7 @@ $gris-principal: #343a40;
 @mixin fuente($font-size) {
     font-size: $font-size;
 }
+/*Definicion de clases o caracteristicas generales*/
 a{
     text-decoration: none;
     color: #000000;

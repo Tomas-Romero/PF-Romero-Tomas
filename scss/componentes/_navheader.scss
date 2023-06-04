@@ -1,5 +1,6 @@
 nav{
     grid-area: my-nav;
+    z-index: 1000;
     .dropdown-menu {
         background-color: $gris-principal;
         a{

@@ -140,6 +140,7 @@ main {
 
 nav {
   grid-area: my-nav;
+  z-index: 1000;
 }
 nav .dropdown-menu {
   background-color: #343a40;
@@ -439,6 +440,28 @@ header .div-header h1 {
     font-size: 1.5rem;
   }
 }
+/*Diseño de la página de galeria*/
+.section-galeria-galeria img:not(.img-titulos) {
+  border: 3px solid #000000;
+  border-radius: 20px;
+}
+.section-galeria-galeria .carousel {
+  width: 90%;
+  max-width: 992px;
+}
+.section-galeria-galeria .carousel .carousel-caption {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.section-galeria-bartender .galeria-bartender {
+  max-width: 992px;
+}
+.section-galeria-bartender .galeria-bartender .galeria-iframe {
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+}
+
 footer {
   grid-area: my-footer;
   padding: 40px 0px 10px 10px;

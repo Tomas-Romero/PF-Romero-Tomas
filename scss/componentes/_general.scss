@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 $gris-principal: #343a40;
+@mixin tamaño($width, $height)
+{
+    width: $width;
+    height: $height;
+}
+@mixin borde-redondeado($border-radius)
+{
+    border-radius: $border-radius;
+}
+@mixin fuente($font-size) {
+    font-size: $font-size;
+}
 a{
     text-decoration: none;
     color: #000000;
@@ -30,20 +42,19 @@ main{
 }  
 .titulos-nosotros{
     justify-content: center;
-    height: 70px;
+    @include tamaño(auto, 70px);
     gap: 20px;
     .h2-nosotros{
-    font-size: 3.5rem;
+    @include fuente(3.5rem);
     text-decoration: underline;
     margin: 0px;
     }
     .h3-nosotros{
-    font-size: 2rem;
+    @include fuente(2rem);
     text-decoration: underline;
     }
     .img-titulos{
-    width: 50px;
-    height: 50px;
+    @include tamaño(50px, 50px);
     }
 }
 .cont-flex{
@@ -90,7 +101,7 @@ main{
     padding: 70px 10px 10px 10px;
 }
 .ancho100{
-    width: 100%;
+    @include tamaño(100%, auto);
 }
 .marginpadding0{
     margin: 0px;
@@ -105,10 +116,10 @@ main{
 .botones{
     background-color: $gris-principal;
     padding: 10px;
-    border-radius: 20px;
+    @include borde-redondeado(20px);
     color: #ffffff;
-    font-size: 2.5rem;
-    width: 100%;
+    @include fuente(2.5rem);
+    @include tamaño(100%, auto);
 }
 .gap20px{
     gap: 20px;

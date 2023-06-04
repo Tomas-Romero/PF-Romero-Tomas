@@ -27,6 +27,7 @@ main {
 
 .titulos-nosotros {
   justify-content: center;
+  width: auto;
   height: 70px;
   gap: 20px;
 }
@@ -101,6 +102,7 @@ main {
 
 .ancho100 {
   width: 100%;
+  height: auto;
 }
 
 .marginpadding0 {
@@ -123,6 +125,7 @@ main {
   color: #ffffff;
   font-size: 2.5rem;
   width: 100%;
+  height: auto;
 }
 
 .gap20px {
@@ -152,6 +155,7 @@ nav .navbar-brand {
   margin: 0px;
 }
 nav .imagen-logo-nav {
+  width: auto;
   height: 50px;
   margin-bottom: 10px;
 }
@@ -167,9 +171,6 @@ nav ul {
   }
 }
 @media (min-width: 370px) and (max-width: 767px) {
-  nav nav {
-    width: 100%;
-  }
   nav .navbar-texto {
     font-size: 2rem;
   }
@@ -177,6 +178,7 @@ nav ul {
 
 .nav-inicio {
   position: fixed;
+  width: 100%;
   height: 80px;
 }
 
@@ -189,11 +191,13 @@ header .div-header {
   background-image: url(../images/backgroun-header2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: auto;
   height: 400px;
   border-bottom: 3px solid black;
 }
 header .div-header .img-header {
   width: 300px;
+  height: auto;
 }
 header .div-header h1 {
   font-size: 100px;
@@ -222,6 +226,7 @@ header .div-header h1 {
 }
 .section-nosotros-inicio .div-cont-contacto-inicio {
   width: 48%;
+  height: auto;
   align-self: center;
 }
 .section-nosotros-inicio .nosotros-inicio {
@@ -233,31 +238,38 @@ header .div-header h1 {
   font-size: 1.5rem;
   text-align: justify;
   width: 70%;
+  height: auto;
 }
 .section-nosotros-inicio .img-nosotros-inicio {
   width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 .section-nosotros-inicio .button-nosotros-inicio {
+  width: auto;
   height: 4rem;
   font-size: 1.75rem;
 }
 
 .imagen-menu-inicio {
   width: 30%;
+  height: auto;
   border-radius: 20px;
 }
 
 .cont-galeria-inicio {
+  width: auto;
   height: 90%;
 }
 
 .img-galeria-inicio {
   width: 32%;
+  height: auto;
   border-radius: 20px;
 }
 
 .section-presentacion-inicio {
+  width: auto;
   height: 70vh;
 }
 
@@ -272,6 +284,7 @@ header .div-header h1 {
   }
   .section-nosotros-inicio div p {
     width: 90%;
+    height: auto;
   }
   .section-menu-inicio {
     align-items: center;
@@ -282,6 +295,7 @@ header .div-header h1 {
   }
   .cont-botonmenu-inicio {
     width: 80%;
+    height: auto;
   }
   section .titulos-nosotros .h2-nosotros {
     font-size: 3rem;
@@ -293,13 +307,15 @@ header .div-header h1 {
   }
   .imagen-menu-inicio {
     width: 70%;
+    height: auto;
   }
   .img-galeria-inicio {
     width: 90%;
+    height: auto;
   }
   .video-presentacion-inicio {
-    height: 40vh;
     width: 40vh;
+    height: 40vh;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -308,19 +324,23 @@ header .div-header h1 {
   }
   .imagen-menu-inicio {
     width: 50%;
+    height: auto;
   }
   .img-galeria-inicio {
     width: 50%;
+    height: auto;
   }
 }
 /*Diseño de la página nosotros*/
 .divnosotros-nosotros {
   width: 47%;
+  height: auto;
 }
 .divnosotros-nosotros p {
   font-size: 2rem;
   text-align: justify;
   width: 90%;
+  height: auto;
 }
 
 .img-nosotros-nosotros {
@@ -329,6 +349,7 @@ header .div-header h1 {
 
 .section-nosotros-reseñas .articulo-reseña {
   width: 30%;
+  height: auto;
   padding: 10px;
   border-radius: 60px 0px 60px 0px;
 }
@@ -342,11 +363,13 @@ header .div-header h1 {
 @media (min-width: 370px) and (max-width: 767px) {
   .section-nosotros-reseñas .articulo-reseña {
     width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .section-nosotros-reseñas .articulo-reseña {
     width: 70%;
+    height: auto;
   }
   .section-nosotros-reseñas .reseñas-nosotros {
     align-items: center;
@@ -355,10 +378,12 @@ header .div-header h1 {
 
 .img-nosotros-premios {
   width: 20%;
+  height: auto;
 }
 
 .div-ubicacion {
   width: 29%;
+  height: auto;
 }
 .div-ubicacion img {
   width: 70px;
@@ -369,22 +394,25 @@ header .div-header h1 {
 }
 
 .section-nosotros-ubicacion .titulos-nosotros img {
+  width: auto;
   height: 70px;
 }
 
 .div-iframe-ubicacion {
   width: 68%;
-  padding: 15px;
   height: 400px;
+  padding: 15px;
   border-radius: 20px;
 }
 
 .div-tabla-horario {
   width: 80%;
+  height: auto;
   max-width: 768px;
 }
 .div-tabla-horario table {
   width: 100%;
+  height: auto;
 }
 .div-tabla-horario thead {
   background-color: #343a40;
@@ -393,19 +421,23 @@ header .div-header h1 {
 
 .section-nosotros-patio .div-1-section-patio {
   width: 45%;
+  height: auto;
   align-items: center;
 }
 .section-nosotros-patio .div-1-section-patio p {
   font-size: 2rem;
   width: 80%;
+  height: auto;
   text-align: justify;
 }
 .section-nosotros-patio img:not(.img-titulos) {
   width: 90%;
+  height: auto;
   border-radius: 20px;
 }
 .section-nosotros-patio .div-2-section-patio {
   width: 35%;
+  height: auto;
 }
 
 @media (min-width: 370px) and (max-width: 991px) {
@@ -414,9 +446,11 @@ header .div-header h1 {
   }
   .img-nosotros-premios {
     width: 40%;
+    height: auto;
   }
   .divnosotros-nosotros img {
     width: 80%;
+    height: auto;
   }
   .section-nosotros-patio {
     gap: 20px;
@@ -427,6 +461,7 @@ header .div-header h1 {
   .section-nosotros-patio .div-1-section-patio p {
     font-size: 2rem;
     width: 90%;
+    height: auto;
   }
 }
 @media (min-width: 370px) and (max-width: 767px) {
@@ -443,10 +478,11 @@ header .div-header h1 {
 /*Diseño de la página de galeria*/
 .section-galeria-galeria img:not(.img-titulos) {
   border: 3px solid #000000;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 .section-galeria-galeria .carousel {
   width: 90%;
+  height: auto;
   max-width: 992px;
 }
 .section-galeria-galeria .carousel .carousel-caption {
@@ -458,7 +494,6 @@ header .div-header h1 {
   max-width: 992px;
 }
 .section-galeria-bartender .galeria-bartender .galeria-iframe {
-  border: 3px solid #ffffff;
   border-radius: 15px;
 }
 
@@ -469,18 +504,23 @@ footer {
 }
 footer .cont-copyright-footer {
   width: 30%;
+  height: auto;
 }
 footer .cont-copyright-footer img {
   width: 70%;
+  height: auto;
 }
 footer .cont-ubicacion-footer {
   width: 35%;
+  height: auto;
 }
 footer .cont-redes-footer {
   width: 20%;
+  height: auto;
 }
 footer .img-redes-footer {
   width: 30%;
+  height: auto;
 }
 footer .copyright-footer {
   font-style: italic;
@@ -512,11 +552,13 @@ footer .copyright-footer {
   }
   .img-redes-footer {
     width: 60%;
+    height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .img-redes-footer {
     width: 30%;
+    height: auto;
   }
   footer {
     font-size: 1.5rem;

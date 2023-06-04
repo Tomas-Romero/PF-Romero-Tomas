@@ -1,21 +1,21 @@
 footer{
     grid-area: my-footer;
     padding: 40px 0px 10px 10px;
-    font-size: 1.75rem;
+    @include fuente(1.75rem);
     .cont-copyright-footer{
-        width: 30%;
+        @include tamaño(30%, auto);
     }
     .cont-copyright-footer img{
-        width: 70%;
+        @include tamaño(70%, auto);
     }
     .cont-ubicacion-footer{
-        width: 35%;
+        @include tamaño(35%, auto);
     }
     .cont-redes-footer{
-        width: 20%;
+        @include tamaño(20%, auto);
     }
     .img-redes-footer{
-        width: 30%;
+        @include tamaño(30%, auto);
     }
     .copyright-footer {
         font-style: italic;
@@ -27,7 +27,7 @@ footer{
     flex-direction: column;
 }
 section .titulos-nosotros .h2-largos{
-    font-size: 2.2rem;
+    @include fuente(2.2rem);
 }
 .mobile-columna-reverse{
     flex-direction: column-reverse;
@@ -39,21 +39,21 @@ section .titulos-nosotros .h2-largos{
     padding-top: 100px;
 }
 footer{
-    font-size: 1rem;
+    @include fuente(1rem);
     gap: 20px;
 }
 .cont-redes-footer{
     flex-flow: row;
 }
 .img-redes-footer{
-    width: 60%;
+    @include tamaño(60%, auto);
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
 .img-redes-footer{
-    width: 30%;
+    @include tamaño(30%, auto);
 }
 footer{
-    font-size: 1.5rem;
+    @include fuente(1.5rem);
 }
 }

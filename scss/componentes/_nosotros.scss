@@ -1,36 +1,36 @@
 /*Diseño de la página nosotros*/
 .divnosotros-nosotros{
-    width: 47%;
+    @include tamaño(47%, auto);
     p{
-        font-size: 2rem;
+        @include fuente(2rem);
         text-align: justify;
-        width: 90%;
+        @include tamaño(90%, auto);
     }
 }
 .img-nosotros-nosotros{
-    border-radius: 20px;
+    @include borde-redondeado(20px);
 }
 .section-nosotros-reseñas{
     .articulo-reseña{
-        width: 30%;
+        @include tamaño(30%, auto);
         padding: 10px;
-        border-radius: 60px 0px 60px 0px;
+        @include borde-redondeado(60px 0px 60px 0px);
         h4{
-            font-size: 2rem;
-            border-radius: 40px;
+            @include fuente(2rem);
+            @include borde-redondeado(40px);
         }
         p{
-            font-size: 1.2rem;
+            @include fuente(1.2rem);
         }
     }
     @media (min-width: 370px) and (max-width: 767px){
     .articulo-reseña{
-        width: 100%; 
+        @include tamaño(100%, auto); 
     }
     }
     @media (min-width: 768px) and (max-width: 991px){
     .articulo-reseña{
-        width: 70%; 
+        @include tamaño(70%, auto); 
     }
     .reseñas-nosotros{
         align-items: center;
@@ -38,32 +38,30 @@
     }     
 }
 .img-nosotros-premios{
-    width: 20%;
+    @include tamaño(20%, auto);
 }
 .div-ubicacion{
-    width: 29%;
+    @include tamaño(29%, auto);
     img{
-        width: 70px;
-        height: 70px;
+        @include tamaño(70px, 70px);
     }
     p{
-        font-size: 2rem;
+        @include fuente(2rem);
     }
 }
 .section-nosotros-ubicacion .titulos-nosotros img{
-    height: 70px;
+    @include tamaño(auto, 70px);
 }
 .div-iframe-ubicacion{
-    width: 68%;
+    @include tamaño(68%, 400px);
     padding: 15px;
-    height: 400px;
-    border-radius: 20px;
+    @include borde-redondeado(20px);
 }
 .div-tabla-horario{
-    width: 80%;
+    @include tamaño(80%, auto);
     max-width: 768px;
     table{
-        width: 100%;
+        @include tamaño(100%, auto);
     }
     thead{
         background-color: $gris-principal;
@@ -72,20 +70,20 @@
 }
 .section-nosotros-patio{
     .div-1-section-patio{
-        width: 45%;
+        @include tamaño(45%, auto);
         align-items: center;
         p{
-            font-size: 2rem;
-            width: 80%;
+            @include fuente(2rem);
+            @include tamaño(80%, auto);
             text-align: justify;
         }
     }
     img:not(.img-titulos){
-        width: 90%;
-        border-radius: 20px;
+        @include tamaño(90%, auto);
+        @include borde-redondeado(20px);
     }
     .div-2-section-patio{
-        width: 35%;
+        @include tamaño(35%, auto);
     }
 
 }
@@ -95,30 +93,30 @@
     order: 2;
 }
 .img-nosotros-premios{
-    width: 40%;
+    @include tamaño(40%, auto);
 }
 .divnosotros-nosotros img{
-    width: 80%;
+    @include tamaño(80%, auto);
 }
 .section-nosotros-patio{
     gap: 20px;
     .div-1-section-patio{
         gap: 20px;
         p{
-            font-size: 2rem;
-            width: 90%;
+            @include fuente(2rem);
+            @include tamaño(90%, auto);
         }
     }
 }
 }
 @media (min-width: 370px) and (max-width: 767px){
 .section-nosotros-patio .h2-nosotros{
-    font-size: 2.5rem;
+    @include fuente(2.5rem);
 }
 .divnosotros-nosotros p{
-    font-size: 1.5rem;
+    @include fuente(1.5rem);
 }
 .section-nosotros-patio .div-1-section-patio p{
-    font-size: 1.5rem;
+    @include fuente(1.5rem);
 }
 }

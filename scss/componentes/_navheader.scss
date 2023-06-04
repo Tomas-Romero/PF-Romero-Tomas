@@ -11,11 +11,11 @@ nav{
         margin: 0px;
     }
     .imagen-logo-nav{
-        height: 50px;
+        @include tamaño(auto, 50px);
         margin-bottom: 10px;
     }
     .navbar-texto{
-        font-size: 2em;
+        @include fuente(2em);
     }
     ul{
         list-style-type: none;
@@ -26,17 +26,14 @@ nav{
     }
     }
     @media (min-width: 370px) and (max-width: 767px){
-    nav{
-        width: 100%;
-    }
     .navbar-texto{
-        font-size: 2rem;
+        @include fuente(2rem);
     }    
     }     
 }
 .nav-inicio{
     position: fixed;
-    height: 80px;
+    @include tamaño(100%, 80px);
 }
 header{
     grid-area: my-header;
@@ -46,13 +43,13 @@ header{
         background-image: url(../images/backgroun-header2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 400px;
+        @include tamaño(auto, 400px);
         border-bottom: 3px solid black;
         .img-header{
-            width: 300px;
+            @include tamaño(300px, auto);
         }
         h1{
-            font-size: 100px;
+            @include fuente(100px);
         }
         @media (min-width: 370px) and (max-width: 991px){
         h1{
@@ -64,7 +61,7 @@ header{
             max-width: 50%;
         }
         h1{
-            font-size: 5rem;
+            @include fuente(5rem);
             text-align: center;
         }
         }           

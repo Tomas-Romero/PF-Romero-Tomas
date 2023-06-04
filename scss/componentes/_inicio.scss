@@ -5,52 +5,51 @@
         padding-bottom: 10px;
     }
     .div-cont-contacto-inicio{
-        width: 48%;
+        @include tamaño(48%, auto);
         align-self: center;
     }
     .nosotros-inicio{
-        font-size: 3.5rem;
+        @include fuente(3.5rem);
         text-decoration: underline;
         margin-bottom: 20px;
     }
     p{
-        font-size: 1.5rem;
+        @include fuente(1.5rem);
         text-align: justify;
-        width: 70%;
+        @include tamaño(70%,auto);
     }
     .img-nosotros-inicio{
-        width: 100%;
-        border-radius: 10px;
+        @include tamaño(100%, auto);
+        @include borde-redondeado(10px);
     }
     .button-nosotros-inicio{
-        height: 4rem;
-        font-size: 1.75rem;
+        @include tamaño(auto, 4rem);
+        @include fuente(1.75rem);
     }
 }
 .imagen-menu-inicio{
-    width: 30%;
-    border-radius: 20px;
+    @include tamaño(30%, auto);
+    @include borde-redondeado(20px);
 }
 .cont-galeria-inicio{
-    height: 90%;
+    @include tamaño(auto, 90%);
 }
 .img-galeria-inicio{
-    width: 32%;
-    border-radius: 20px;
+    @include tamaño(32%, auto);
+    @include borde-redondeado(20px);
 }
 .section-presentacion-inicio{
-    height: 70vh;
+    @include tamaño(auto, 70vh);
 }
 .video-presentacion-inicio{
-    width: 80vh;
-    height: 40vh;
+    @include tamaño(80vh, 40vh);
 }
 @media (min-width: 370px) and (max-width: 991px){
 .section-nosotros-inicio{
     padding: - 5px 5px 5px;
 }
 .section-nosotros-inicio div p{
-    width: 90%;
+    @include tamaño(90%, auto);
 }
 .section-menu-inicio{
     align-items: center;
@@ -60,35 +59,34 @@
     align-items: center;
 }
 .cont-botonmenu-inicio{
-    width: 80%;
+    @include tamaño(80%, auto);
 }
 section .titulos-nosotros .h2-nosotros{
-    font-size: 3rem;
+    @include fuente(3rem);
 }
 }
 @media (min-width: 370px) and (max-width: 767px){
 .button-menu-inicio{
-    font-size: 1.5rem;
+    @include fuente(1.5rem);
 }
 .imagen-menu-inicio{
-    width: 70%;
+    @include tamaño(70%, auto);
 }
 .img-galeria-inicio{
-    width: 90%;
+    @include tamaño(90%, auto);
 }
 .video-presentacion-inicio{
-    height: 40vh;
-    width: 40vh;
+    @include tamaño(40vh, 40vh);
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
 .button-menu-inicio{
-    font-size: 3rem;
+    @include fuente(3rem);
 }
 .imagen-menu-inicio{
-    width: 50%;
+    @include tamaño(50%, auto);
 }
 .img-galeria-inicio{
-    width: 50%;
+    @include tamaño(50%, auto);
 }
 }

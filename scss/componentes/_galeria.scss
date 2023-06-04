@@ -2,10 +2,10 @@
 .section-galeria-galeria{
     img:not(.img-titulos){
         border: 3px solid #000000;
-        border-radius: 20px;
+        @include borde-redondeado(40px);
     }
     .carousel{
-        width: 90%;
+        @include tamaño(90%, auto);
         max-width: 992px;
         .carousel-caption{
             background-color: #ffffff;
@@ -17,8 +17,7 @@
     .galeria-bartender{
         max-width: 992px;
         .galeria-iframe{
-            border: 3px solid #ffffff;
-            border-radius: 15px;
+            @include borde-redondeado(15px);    
         }
     }
 }  

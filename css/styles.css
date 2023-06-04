@@ -160,6 +160,19 @@ nav .navbar-texto {
 nav ul {
   list-style-type: none;
 }
+@media (min-width: 370px) and (max-width: 991px) {
+  nav h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 370px) and (max-width: 767px) {
+  nav nav {
+    width: 100%;
+  }
+  nav .navbar-texto {
+    font-size: 2rem;
+  }
+}
 
 .nav-inicio {
   position: fixed;
@@ -183,6 +196,20 @@ header .div-header .img-header {
 }
 header .div-header h1 {
   font-size: 100px;
+}
+@media (min-width: 370px) and (max-width: 991px) {
+  header .div-header h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 370px) and (max-width: 767px) {
+  header .div-header .img-header {
+    max-width: 50%;
+  }
+  header .div-header h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
 }
 
 /*Diseño Main o Index*/
@@ -239,9 +266,6 @@ header .div-header h1 {
 }
 
 @media (min-width: 370px) and (max-width: 991px) {
-  h1 {
-    text-align: center;
-  }
   .section-nosotros-inicio {
     padding: -5px 5px 5px;
   }
@@ -258,21 +282,11 @@ header .div-header h1 {
   .cont-botonmenu-inicio {
     width: 80%;
   }
+  section .titulos-nosotros .h2-nosotros {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 370px) and (max-width: 767px) {
-  .img-header {
-    max-width: 50%;
-  }
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-  }
-  nav {
-    width: 100%;
-  }
-  .navbar-texto {
-    font-size: 2rem;
-  }
   .button-menu-inicio {
     font-size: 1.5rem;
   }
@@ -281,9 +295,6 @@ header .div-header h1 {
   }
   .img-galeria-inicio {
     width: 90%;
-  }
-  .section-presentacion-inicio .h2-nosotros {
-    font-size: 3rem;
   }
   .video-presentacion-inicio {
     height: 40vh;
@@ -337,7 +348,7 @@ footer .copyright-footer {
     flex-direction: column-reverse;
   }
   .mobile-ancho100 {
-    width: 100%;
+    width: 100% !important;
   }
   .mobile-padding100px {
     padding-top: 100px;

@@ -145,6 +145,33 @@ main {
   justify-items: center;
 }
 
+/*Animaciones*/
+.color-animacion {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.color-animacion:hover {
+  z-index: 100;
+  border: 1px solid #ffffff;
+  background-color: rgb(158, 158, 158);
+  border-radius: 10px;
+}
+
+.grow-botones {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.grow-botones:hover {
+  z-index: 100;
+  border: 2px solid #000;
+  background-color: rgb(158, 158, 158);
+  transform: scale3d(1.2, 1.2, 0.3);
+  -webkit-transform: scale3d(1.2, 1.2, 0.3);
+  -moz-transform: scale3d(1.2, 1.2, 0.3);
+}
+
 nav {
   grid-area: my-nav;
   z-index: 1000;

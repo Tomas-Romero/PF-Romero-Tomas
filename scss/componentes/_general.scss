@@ -135,3 +135,28 @@ main{
     background-color: $gris-principal;
     justify-items: center;
 }
+/*Animaciones*/
+.color-animacion{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+    &:hover{
+    z-index: 100;
+    border: 1px solid #ffffff;
+    background-color: rgb(158, 158, 158);
+    @include borde-redondeado(10px);
+    } 
+}           
+.grow-botones{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+        &:hover{
+            z-index: 100;
+            border: 2px solid #000;
+            background-color: rgb(158, 158, 158);
+            transform: scale3d(1.2, 1.2, 0.3);
+            -webkit-transform: scale3d(1.2, 1.2, 0.3);
+            -moz-transform: scale3d(1.2, 1.2, 0.3);
+        }  
+}          

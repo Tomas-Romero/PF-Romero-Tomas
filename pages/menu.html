@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre el exquisito menú de Platinum Star, donde ofrecemos una amplia variedad de platos y bebidas cuidadosamente seleccionados para satisfacer todos los paladares. Desde deliciosas entradas y suculentos platos principales hasta tentadoras opciones vegetarianas y postres decadentes, nuestro menú combina ingredientes frescos y sabores innovadores para crear una experiencia gastronómica única. Nuestra extensa carta de vinos y cócteles artesanales complementa a la perfección cada plato, brindándote una experiencia culinaria inolvidable. Ven y disfruta de una comida excepcional en un ambiente acogedor y elegante. ¡Te esperamos en Platinum Star para deleitar tus sentidos con nuestra exquisita propuesta gastronómica!">
+    <meta name="description" content="Descubre el exquisito menú de Platinum Star, donde ofrecemos una amplia variedad de platos y bebidas cuidadosamente seleccionados para satisfacer todos los paladares. Nuestro menú combina ingredientes frescos y sabores innovadores para crear una experiencia gastronómica única. Nuestra extensa carta de vinos y cócteles artesanales complementa a la perfección cada plato, brindándote una experiencia culinaria inolvidable. Ven y disfruta de una comida excepcional en un ambiente acogedor y elegante.">
     <meta name="keywords" content="Restaurante Platinum Star, Menú del día, Platos principales, Entradas y aperitivos, Bebidas y cócteles, Opciones vegetarianas, Postres exquisitos, Carta de vinos">
     <link rel="shortcut icon" href="../images/Platinum-star-iconblanco.webp" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Platinum Star | Menú - Platos y Bebidas</title>
 </head>
 <body>
+<!--Seccion del Nav y Header-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-inicio ancho100 marginpadding0">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" data-aos="fade-right" data-aos-duration="3000" href="../index.html">
             <img class="imagen-logo-nav" src="../images/Platinum-star-iconblancosinnombre.webp" alt="Logo de Platinum Star">
             <span class="navbar-texto">Platinum Star</span>
         </a>
@@ -26,9 +25,9 @@
         </button>
         <div class="collapse navbar-collapse justificado-space-around " id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                <li class="nav-item">
+                <li class="nav-item color-animacion"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item color-animacion">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,8 +41,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -54,6 +53,7 @@
         </div>
     </header>
     <main>
+<!--Seccion de presentacion de la pagina del menu-->
         <section class="section-menu-menu cont-flex mobile-columna background-blanco">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/icon-menu-negro.webp" alt="Icono de un menu">
@@ -144,8 +144,7 @@
                         <p>Jugoso filete de ternera a la parrilla, acompañado de papas asadas y verduras salteadas.</p>
                         <p><strong>$6500</strong></p>
                     </div>
-                </article>
-                
+                </article>               
                 <article class="article-entrada cont-flex borde-blanco">
                     <img src="../images/entrada-inicio.webp" class="borde-negro card-img-top" alt="Plato principal">
                     <div class="texto-centrado">
@@ -153,8 +152,7 @@
                         <p>Salmón fresco horneado con una deliciosa salsa de miel y mostaza, servido con arroz pilaf.</p>
                         <p><strong>$5500</strong></p>
                     </div>
-                </article>
-                
+                </article>               
                 <article class="article-entrada cont-flex borde-blanco">
                     <img src="../images/entrada-inicio.webp" class="borde-negro card-img-top" alt="Plato principal">
                     <div class="texto-centrado">
@@ -162,8 +160,7 @@
                         <p>Pasta fettuccine en salsa Alfredo cremosa, acompañada de tiernos trozos de pollo a la parrilla.</p>
                         <p><strong>$4800</strong></p>
                     </div>
-                </article>
-                
+                </article>               
                 <article class="article-entrada cont-flex borde-blanco">
                     <img src="../images/entrada-inicio.webp" class="borde-negro card-img-top" alt="Plato principal">
                     <div class="texto-centrado">
@@ -171,8 +168,7 @@
                         <p>Deliciosa lasaña casera con capas de pasta, verduras frescas y queso gratinado.</p>
                         <p><strong>$4200</strong></p>
                     </div>
-                </article>
-                
+                </article>   
                 <article class="article-entrada cont-flex borde-blanco">
                     <img src="../images/entrada-inicio.webp" class="borde-negro card-img-top" alt="Plato principal">
                     <div class="texto-centrado">
@@ -180,8 +176,7 @@
                         <p>Jugosos trozos de pollo cocinados en una sabrosa salsa de curry, servidos con arroz basmati.</p>
                         <p><strong>$4900</strong></p>
                     </div>
-                </article>
-                
+                </article>          
                 <article class="article-entrada cont-flex borde-blanco">
                     <img src="../images/entrada-inicio.webp" class="borde-negro card-img-top" alt="Plato principal">
                     <div class="texto-centrado">
@@ -371,6 +366,7 @@
                 <img class="img-titulos" src="../images/icon-flor.webp" alt="Icono de una flor">
                 <h2 class="h2-nosotros" id="menu-bebidas">Bebidas</h2>
             </div>
+    <!--Primera parte y seccion del menu de bebidas-->
             <div class="cont-bebidas cont-bebidas-negro mobile-ancho100 flex-columna cont-flex contenido-alineado-centro">
                 <h3 class="titulos-bebidas">Tragos</h3>
                 <h4 class="titulos-bebidas-secundarios">Frutales</h4>
@@ -542,6 +538,7 @@
                     <p class="precio-bebidas">$4000</p>
                 </article>            
             </div>
+        <!--Segunda parte y seccion del menu de bebidas-->
             <div class="cont-bebidas cont-bebidas-blanco mobile-ancho100 flex-columna contenido-alineado-centro cont-flex">
                 <h3 class="titulos-bebidas">Vinos</h3>
                 <h4 class="titulos-bebidas-secundarios">Tintos</h4>
@@ -719,6 +716,7 @@
                     <p class="precio-bebidas">$2100</p>
                 </article>
             </div>
+        <!--Tercera division y la ultima del menu de bebidas-->
             <div class="cont-bebidas cont-bebidas-negro mobile-ancho100 flex-columna contenido-alineado-centro cont-flex">
                 <h3 class="titulos-bebidas">Jarras</h3>
                 <h4 class="titulos-bebidas-secundarios">Tragos</h4>
@@ -897,7 +895,7 @@
 
             </div>
         </section>
-<!--Seccion de la Cafeteria Presentacion del Menú-->
+<!--Seccion de la Cafeteria Presentacion de la Cafeteria-->
         <section class="section-menu-cafeteria-titulo gap20px background-negro cont-flex">
             <div class="titulos-nosotros ancho100 cont-flex">
                 <img class="img-titulos" src="../images/icon-cafe.webp" alt="Icono de una flor">
@@ -909,6 +907,7 @@
             </div>
         </section>
 <!--Seccion de la Cafeteria del Menú-->
+        <!--Primera parte o de arriba del menu de cafeteria-->
         <section class="section-menu-bebidas mobile-columna section-menu-cafeteria cont-flex">
             <div class="cont-bebidas flex-columna mobile-ancho100 cont-bebidas-negro cont-flex">
                 <h3 class="titulos-bebidas">Jarras</h3>
@@ -1086,6 +1085,7 @@
                     <p class="precio-bebidas">$10.50</p>
                 </article>
             </div>
+        <!--parte derecha o de abajo del menu de cafeteria-->
             <div class="cont-bebidas mobile-ancho100 flex-columna cont-bebidas-blanco background-blanco cont-flex">
                 <h3 class="titulos-bebidas">Jarras</h3>
                 <h4 class="titulos-bebidas-secundarios">Tragos</h4>
@@ -1265,6 +1265,7 @@
             </div>
         </section>
     </main>
+<!--Seccion del footer-->
     <footer class="cont-flex background-degrade-blanco justificado-space-around mobile-padding100px items-alineado-centro texto-centrado mobile-columna-reverse">
         <div class="cont-copyright-footer cont-flex flex-columna items-alineado-centro justificado-centro mobile-ancho100">
             <a href="../index.html"><img class="logo-footer" src="../images/Platinum-star-iconnegro.webp" alt="Logo del restaurante Platinum Star"></a>
@@ -1277,12 +1278,14 @@
             <a href="nosotros.html#ubicacion"><strong>Ubicación</strong></a>
         </div>
         <div class="cont-redes-footer cont-flex gap20px texto-centrado mobile-ancho100 justificado-centro items-alineado-centro">           
-            <a target="_blank" href="https://www.instagram.com"><img class="img-redes-footer" src="../images/Instragram-icon.webp" alt="Logo de Instagram para link"></a>
-            <a target="_blank" href="https://wa.me/+5492604400670"><img class="img-redes-footer" src="../images/Whatsapp-icon.webp" alt="Logo de Whatsapp para link"></a>
-            <a target="_blank" href="mailto:Tomasromero200310@gmail.com"><img class="img-redes-footer" src="../images/gmail-icon.webp" alt="Logo de Gmail para link"></a>
+            <a target="_blank" href="https://www.instagram.com"><img class="img-redes-footer grow-botones" src="../images/Instragram-icon.webp" alt="Logo de Instagram para link"></a>
+            <a target="_blank" href="https://wa.me/+5492604400670"><img class="img-redes-footer grow-botones" src="../images/Whatsapp-icon.webp" alt="Logo de Whatsapp para link"></a>
+            <a target="_blank" href="mailto:Tomasromero200310@gmail.com"><img class="img-redes-footer grow-botones" src="../images/gmail-icon.webp" alt="Logo de Gmail para link"></a>
         </div>
     </footer>
     <!--Link a js de bootstrap-->
-    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 </body>
 </html>

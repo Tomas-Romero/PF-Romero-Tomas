@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre más sobre nosotros en Platinum Star. Somos un restaurante con una amplia experiencia en ofrecer deliciosos platos y una atención de calidad. Conoce nuestra historia, nuestra pasión por la gastronomía y los reconocimientos que hemos obtenido a lo largo de los años. Además, encuentra información sobre nuestros horarios de atención y cómo reservar una mesa. Ven y únete a nosotros en Platinum Star para vivir una experiencia gastronómica única y memorable.">
+    <meta name="description" content="Descubre más sobre nosotros en Platinum Star. Somos un restaurante con una amplia experiencia en ofrecer deliciosos platos y una atención de calidad.">
     <meta name="keywords" content="Restaurante Platinum Star, Experiencia culinaria, Historia del restaurante, Horarios de apertura, Premios y reconocimientos, Equipo de chefs, Servicio excepcional, Experiencia gastronómica única">
     <link rel="shortcut icon" href="../images/Platinum-star-iconblanco.webp" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Platinum Star | Nosotros - Historia, Horarios, Premios</title>
 </head>
 <body>
+<!--Seccion del nav y header-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-inicio ancho100 marginpadding0">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" data-aos="fade-right" data-aos-duration="3000" href="../index.html">
             <img class="imagen-logo-nav" src="../images/Platinum-star-iconblancosinnombre.webp" alt="Logo de Platinum Star">
             <span class="navbar-texto">Platinum Star</span>
         </a>
@@ -26,9 +25,9 @@
         </button>
         <div class="collapse navbar-collapse justificado-space-around " id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item active"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                <li class="nav-item">
+                <li class="nav-item color-animacion"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item color-animacion active"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item color-animacion">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,8 +41,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -54,7 +53,8 @@
         </div>
     </header>
     <main>
-        <section class="section-nosotros-nosotros gap20px background-degrade-blanco cont-flex mobile-columna items-alineado-centro">
+    <!--Seccion de historia sobre el restaurante-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-nosotros-nosotros gap20px background-degrade-blanco cont-flex mobile-columna items-alineado-centro">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/cubiertos-icon.webp" alt="Icono de cubiertos">    
                 <h2 class="h2-nosotros h2-largos">Sobre Nosotros</h2>
@@ -66,7 +66,8 @@
                 <p>Descubre la esencia de la cocina tradicional en nuestro restaurante con años de experiencia. Deléitate con una variedad de platos exquisitos, preparados con pasión y atención al detalle. Nuestro objetivo es brindar una experiencia gastronómica inigualable que satisfaga todos los paladares. ¡Bienvenido a nuestro rincón culinario!</p>
             </div>
         </section>
-        <section class="section-nosotros-reseñas background-degrade-negro cont-flex gap20px">
+    <!--Seccion de las reseñas del restaurante-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-nosotros-reseñas background-degrade-negro cont-flex gap20px">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/icon-like.webp" alt="Icono de un like acompañando al titulo">
                 <h2 class="h2-nosotros">Reseñas</h2>
@@ -86,7 +87,8 @@
                 </article>
             </div>
         </section>
-        <section class="section-nosotros-premios background-degrade-blanco cont-flex gap20px justificado-centro">
+    <!--Seccion de los premios-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-nosotros-premios background-degrade-blanco cont-flex gap20px justificado-centro">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos " src="../images/icon-trofeo.webp" alt="Icono de una insignia">
                 <h2 class="h2-nosotros">Premios</h2>
@@ -98,7 +100,8 @@
                 <img src="../images/Platinum-star-iconnegro.webp" alt="Imagen de uno de los premios ganados por el restaurante" class="img-nosotros-premios">    
             </div>
         </section>
-        <section class="section-nosotros-ubicacion background-degrade-negro cont-flex gap20px mobile-columna">
+    <!--Seccion de la ubicacion y mapa-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-nosotros-ubicacion background-degrade-negro cont-flex gap20px mobile-columna">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro mobile-ancho100">
                 <img class="img-titulos" src="../images/icon-ubicacion.webp" alt="Icono de ubicación">
                 <h2 id="ubicacion" class="h2-nosotros">Ubicación</h2>
@@ -111,7 +114,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.304300867056!2d-68.32748771031838!3d-34.60140157393414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907e0b54bba47%3A0x2a273dff37a0817c!2sUTN%20-%20Facultad%20Regional%20San%20Rafael!5e0!3m2!1ses!2sar!4v1682074496199!5m2!1ses!2sar"width="100%" height="100%" style="border-radius:20px;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
         </section>
-        <section class="section-nosotros-horario background-degrade-blanco cont-flex gap20px justificado-centro">
+    <!--Seccion de los horarios y dias de atencion-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-nosotros-horario background-degrade-blanco cont-flex gap20px justificado-centro">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/icon-reloj.webp" alt="Icono de un reloj">
                 <h2 class="h2-nosotros">Horarios</h2>
@@ -141,7 +145,8 @@
                 </table>
             </div>
         </section>
-        <section class="section-nosotros-patio background-degrade-negro cont-flex justificado-centro gap20px mobile-ancho100">
+    <!--Seccion de presentacion del patio-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-nosotros-patio background-degrade-negro cont-flex justificado-centro gap20px mobile-ancho100">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/icon-flor.webp" alt="Icono de una flor">
                 <h2 class="h2-nosotros h2-largos">Nuestro Patio</h2>
@@ -157,6 +162,7 @@
 
         </section>
     </main>
+<!--Seccion del footer-->
     <footer class="cont-flex background-degrade-blanco justificado-space-around mobile-padding100px items-alineado-centro texto-centrado mobile-columna-reverse">
         <div class="cont-copyright-footer cont-flex flex-columna items-alineado-centro justificado-centro mobile-ancho100">
             <a href="../index.html"><img class="logo-footer" src="../images/Platinum-star-iconnegro.webp" alt="Logo del restaurante Platinum Star"></a>
@@ -169,12 +175,14 @@
             <a href="#ubicacion"><strong>Ubicación</strong></a>
         </div>
         <div class="cont-redes-footer cont-flex gap20px texto-centrado mobile-ancho100 justificado-centro items-alineado-centro">           
-            <a target="_blank" href="https://www.instagram.com"><img class="img-redes-footer" src="../images/Instragram-icon.webp" alt="Logo de Instagram para link"></a>
-            <a target="_blank" href="https://wa.me/+5492604400670"><img class="img-redes-footer" src="../images/Whatsapp-icon.webp" alt="Logo de Whatsapp para link"></a>
-            <a target="_blank" href="mailto:Tomasromero200310@gmail.com"><img class="img-redes-footer" src="../images/gmail-icon.webp" alt="Logo de Gmail para link"></a>
+            <a target="_blank" href="https://www.instagram.com"><img class="img-redes-footer grow-botones" src="../images/Instragram-icon.webp" alt="Logo de Instagram para link"></a>
+            <a target="_blank" href="https://wa.me/+5492604400670"><img class="img-redes-footer grow-botones" src="../images/Whatsapp-icon.webp" alt="Logo de Whatsapp para link"></a>
+            <a target="_blank" href="mailto:Tomasromero200310@gmail.com"><img class="img-redes-footer grow-botones" src="../images/gmail-icon.webp" alt="Logo de Gmail para link"></a>
         </div>
     </footer>
     <!--Link a js de bootstrap-->
-    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 </body>
 </html>

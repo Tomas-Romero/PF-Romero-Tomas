@@ -7,6 +7,7 @@
     <meta name="description" content="Explora nuestra galería de imágenes y videos en Platinum Star. Sumérgete en la atmósfera única de nuestro restaurante y disfruta de una selección visual de nuestros exquisitos platos, elegantes instalaciones y momentos especiales capturados. Descubre la pasión por la gastronomía que nos impulsa y déjate inspirar por la calidad y creatividad que ofrecemos en cada plato. Desde nuestras creaciones culinarias hasta el ambiente acogedor, nuestra galería te invita a experimentar Platinum Star desde cualquier lugar.">
     <meta name="keywords" content="Restaurante Platinum Star, Fotografías del restaurante, Ambiente elegante, Exquisitos platos, Presentación de platos, Vídeos del restaurante, Experiencia culinaria visual, Decoración y diseño">
     <link rel="shortcut icon" href="../images/Platinum-star-iconblanco.webp" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -16,8 +17,9 @@
     <title>Platinum Star | Galería - Fotos y Vídeos</title>
 </head>
 <body>
+<!--Seccion del Nav y Header-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-inicio ancho100 marginpadding0">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" data-aos="fade-right" data-aos-duration="3000" href="../index.html">
             <img class="imagen-logo-nav" src="../images/Platinum-star-iconblancosinnombre.webp" alt="Logo de Platinum Star">
             <span class="navbar-texto">Platinum Star</span>
         </a>
@@ -26,9 +28,9 @@
         </button>
         <div class="collapse navbar-collapse justificado-space-around " id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                <li class="nav-item">
+                <li class="nav-item color-animacion"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item color-animacion">
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,8 +44,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link active" href="galeria.html">Galería</a></li>
+                <li class="nav-item color-animacion"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -54,7 +56,8 @@
         </div>
     </header>
     <main>
-        <section class="section-galeria-galeria gap20px contenido-alineado-centro justificado-centro background-degrade-blanco cont-flex">
+    <!--Seccion de la primera galeria-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-galeria-galeria gap20px contenido-alineado-centro justificado-centro background-degrade-blanco cont-flex">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/icon-galeria.webp" alt="Icono de imágenes">
                 <h2 class="h2-nosotros h2-largos">Nuestra Galería</h2>
@@ -146,7 +149,8 @@
                 </button>
             </div>
         </section>
-        <section class="section-galeria-bartender gap20px justificado-centro background-degrade-negro cont-flex">
+    <!--Seccion del video de bartender-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-galeria-bartender gap20px justificado-centro background-degrade-negro cont-flex">
             <div class="titulos-nosotros ancho100 cont-flex items-alineado-centro">
                 <img class="img-titulos" src="../images/icon-copa.webp" alt="Icono de una copa de una bebida">
                 <h2 class="h2-nosotros">Bartender</h2>
@@ -155,7 +159,8 @@
                 <iframe class="galeria-iframe borde-blanco" width="100%" height="100%" src="https://www.youtube.com/embed/P2EOVODrSzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="section-galeria-galeria gap20px contenido-alineado-centro justificado-centro background-degrade-blanco cont-flex">
+    <!--Seccion de la segunda galeria-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-galeria-galeria gap20px contenido-alineado-centro justificado-centro background-degrade-blanco cont-flex">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -243,7 +248,8 @@
                 </button>
             </div>
         </section>
-        <section class="section-galeria-bartender gap20px justificado-centro background-degrade-negro cont-flex">
+    <!--Seccion del video de la cafeteria y baristas-->
+        <section data-aos="fade-up" data-aos-duration="3000" class="section-galeria-bartender gap20px justificado-centro background-degrade-negro cont-flex">
             <div class="titulos-nosotros ancho100 cont-flex">
                 <img class="img-titulos" src="../images/icon-cafe.webp" alt="Icono de una taza de café">
                 <h2 class="h2-nosotros">Cafetería</h2>
@@ -254,6 +260,7 @@
             
         </section>
     </main>
+<!--Seccion del Footer-->
     <footer class="cont-flex background-degrade-blanco justificado-space-around mobile-padding100px items-alineado-centro texto-centrado mobile-columna-reverse">
         <div class="cont-copyright-footer cont-flex flex-columna items-alineado-centro justificado-centro mobile-ancho100">
             <a href="../index.html"><img class="logo-footer" src="../images/Platinum-star-iconnegro.webp" alt="Logo del restaurante Platinum Star"></a>
@@ -266,12 +273,14 @@
             <a href="nosotros.html#ubicacion"><strong>Ubicación</strong></a>
         </div>
         <div class="cont-redes-footer cont-flex texto-centrado gap20px mobile-ancho100 justificado-centro items-alineado-centro">           
-            <a target="_blank" href="https://www.instagram.com"><img class="img-redes-footer" src="../images/Instragram-icon.webp" alt="Logo de Instagram para link"></a>
-            <a target="_blank" href="https://wa.me/+5492604400670"><img class="img-redes-footer" src="../images/Whatsapp-icon.webp" alt="Logo de Whatsapp para link"></a>
-            <a target="_blank" href="mailto:Tomasromero200310@gmail.com"><img class="img-redes-footer" src="../images/gmail-icon.webp" alt="Logo de Gmail para link"></a>
+            <a target="_blank" href="https://www.instagram.com"><img class="img-redes-footer grow-botones" src="../images/Instragram-icon.webp" alt="Logo de Instagram para link"></a>
+            <a target="_blank" href="https://wa.me/+5492604400670"><img class="img-redes-footer grow-botones" src="../images/Whatsapp-icon.webp" alt="Logo de Whatsapp para link"></a>
+            <a target="_blank" href="mailto:Tomasromero200310@gmail.com"><img class="img-redes-footer grow-botones" src="../images/gmail-icon.webp" alt="Logo de Gmail para link"></a>
         </div>
     </footer>
     <!--Link a js de bootstrap-->
     <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 </body>
 </html>

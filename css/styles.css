@@ -44,7 +44,7 @@ main {
 }
 .titulos-nosotros .img-titulos {
   width: 50px;
-  height: 50px;
+  height: auto;
 }
 
 .cont-flex {
@@ -542,39 +542,11 @@ header .div-header h1 {
 .section-menu-entradas .cont-articulo-entrada .article-entrada {
   background-color: #fff;
   color: #000;
-  width: 25%;
-  height: auto;
-  border-radius: 20px;
-}
-.section-menu-entradas .cont-articulo-entrada .article-entrada img {
-  border-radius: 20px;
-}
-@media (min-width: 370px) and (max-width: 991px) {
-  .section-menu-entradas .cont-articulo-entrada .article-entrada {
-    justify-content: center;
-    width: 90%;
-    height: auto;
-  }
-  .section-menu-entradas .cont-articulo-entrada .article-entrada img {
-    max-width: 500px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .section-menu-entradas .cont-articulo-entrada .article-entrada {
-    width: 40%;
-    height: auto;
-  }
 }
 
 .section-menu-principal .cont-articulo-entrada .article-entrada {
   background-color: #000;
   color: #fff;
-  width: 25%;
-  height: auto;
-  border-radius: 20px;
-}
-.section-menu-principal .cont-articulo-entrada .article-entrada img {
-  border-radius: 20px;
 }
 .section-menu-principal .cont-articulo-entrada .article-principal-salsas {
   width: 80%;
@@ -584,23 +556,35 @@ header .div-header h1 {
   color: #fff;
   border-radius: 40px;
 }
+
+.cont-articulo-entrada .article-entrada {
+  background-color: #000;
+  color: #fff;
+  width: 25%;
+  height: 40%;
+  border-radius: 20px;
+}
+.cont-articulo-entrada .article-entrada img {
+  border-radius: 20px;
+  height: 55%;
+}
+
 @media (min-width: 370px) and (max-width: 991px) {
-  .section-menu-principal .cont-articulo-entrada .article-entrada {
+  .cont-articulo-entrada .article-entrada {
     justify-content: center;
     width: 90%;
     height: auto;
   }
-  .section-menu-principal .cont-articulo-entrada .article-entrada img {
+  .cont-articulo-entrada .article-entrada img {
     max-width: 500px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .section-menu-principal .cont-articulo-entrada .article-entrada {
+  .cont-articulo-entrada .article-entrada {
     width: 40%;
     height: auto;
   }
 }
-
 .section-menu-bebidas {
   border-top: 3px solid white;
 }
@@ -747,6 +731,10 @@ header .div-header h1 {
   justify-content: center;
   border-radius: 50px;
   align-items: center;
+}
+.section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion img {
+  width: auto;
+  height: 60px;
 }
 .section-contacto-comunicacion .cont-articulos-contacto-comunicate .article-contacto-comunicacion h3 {
   font-size: 2rem;

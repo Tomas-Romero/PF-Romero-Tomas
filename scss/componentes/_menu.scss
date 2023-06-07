@@ -30,27 +30,7 @@
         .article-entrada{
             background-color: #fff;
             color: #000;
-            @include tamaño(25%, auto);
-            @include borde-redondeado(20px);
-            img{
-                @include borde-redondeado(20px);  
-            }
         }
-    }
-    @media (min-width: 370px) and (max-width: 991px){
-        .cont-articulo-entrada .article-entrada{
-            justify-content: center;
-            @include tamaño(90%, auto);
-            img{
-                max-width: 500px;
-            }
-        }
-    }
-    @media (min-width: 768px) and (max-width: 991px){
-        .cont-articulo-entrada .article-entrada{
-            @include tamaño(40%, auto);
-        }
-
     }
 }
 .section-menu-principal{
@@ -58,11 +38,6 @@
         .article-entrada{
             background-color: #000;
             color: #fff;
-            @include tamaño(25%, auto);
-            @include borde-redondeado(20px);
-            img{
-                @include borde-redondeado(20px);  
-            }
         }
         .article-principal-salsas{
             @include tamaño(80%, auto);
@@ -72,21 +47,33 @@
             @include borde-redondeado(40px);
         }
     }
-    @media (min-width: 370px) and (max-width: 991px){
-        .cont-articulo-entrada .article-entrada{
-            justify-content: center;
-            @include tamaño(90%, auto);
-            img{
-                max-width: 500px;
-            }
+}
+.cont-articulo-entrada{
+    .article-entrada{
+        background-color: #000;
+        color: #fff;
+        @include tamaño(25%, 40%);
+        @include borde-redondeado(20px);
+        img{
+            @include borde-redondeado(20px);
+            height: 55%;
         }
     }
-    @media (min-width: 768px) and (max-width: 991px){
-        .cont-articulo-entrada .article-entrada{
-            @include tamaño(40%, auto);
+}
+@media (min-width: 370px) and (max-width: 991px){
+    .cont-articulo-entrada .article-entrada{
+        justify-content: center;
+        @include tamaño(90%, auto);
+        img{
+            max-width: 500px;
         }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .cont-articulo-entrada .article-entrada{
+        @include tamaño(40%, auto);
+    }
 
-    }
 }
 .section-menu-bebidas{
     border-top: 3px solid white;

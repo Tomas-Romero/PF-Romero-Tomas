@@ -56,7 +56,7 @@ main{
     text-decoration: underline;
     }
     .img-titulos{
-    @include tamaño(50px, 50px);
+    @include tamaño(50px, auto);
     }
 }
 .cont-flex{

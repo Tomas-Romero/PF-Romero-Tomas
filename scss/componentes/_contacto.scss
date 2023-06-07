@@ -37,6 +37,9 @@
             justify-content: center;
             @include borde-redondeado(50px);
             align-items: center;
+            img{
+                @include tamaño(auto,60px);
+            }
             h3{
                 @include fuente(2rem);
             }

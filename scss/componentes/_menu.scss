@@ -57,6 +57,7 @@
         img{
             @include borde-redondeado(20px);
             height: 55%;
+            object-fit: cover;
         }
     }
 }

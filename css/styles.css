@@ -567,6 +567,7 @@ header .div-header h1 {
 .cont-articulo-entrada .article-entrada img {
   border-radius: 20px;
   height: 55%;
+  object-fit: cover;
 }
 
 @media (min-width: 370px) and (max-width: 991px) {
